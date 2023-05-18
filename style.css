@@ -1,0 +1,83 @@
+header{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(39, 35, 35);
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header button{
+    border: none;
+    border-radius: 30px;
+}
+.logo{
+    color: rgb(0, 76, 255);
+    font-size: xx-large;
+}
+.search-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20%;
+    width: 20%; 
+    top: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    align-items: center;
+}
+.search-container h1{
+    font-size: xx-large;
+    text-align: center;
+    font-style: bold;
+}
+.search-container input{
+    margin-top: 5%;
+    width: 50%;
+}
+.gallery{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.photo-card{
+    margin-top: 20%;
+}
+.photo-img{
+    width: 50%;
+    margin-left: 27%;
+}
+.photo-static{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+.photo-static-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#btnLoadMore{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 100px;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: blue;
+    margin-left: 50%;
+    cursor: pointer;
+    border-radius: 2%;
+    display: none;
+}
