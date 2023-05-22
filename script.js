@@ -41,7 +41,7 @@ searchBtn.addEventListener('click', () => {
         localStorage.setItem('search', searchText)
         localStorage.setItem('page', 1)
         btnLoadMore.style.display = 'block'
-        let fullUrl = `${url}/?key=${apiKey}&orientation=horizontal&per_page=20`
+        let fullUrl = `${url}/?key=${apiKey}&orientation=horizontal&per_page=3`
         axios.get(`${fullUrl}&page=1&q=${searchText}`)
             .then((res)=> {
                 renderImgCards(res.data.hits)
@@ -50,4 +50,11 @@ searchBtn.addEventListener('click', () => {
         alert('Please enter some text')
     }
     searchInput.value = ''   
+})
+btnLoadMore.addEventListener('click', () => {
+    let extendedUrl = `${url}/?key=${apiKey}&orientation=horizontal&per_page=6`
+    axios.get(`${extendedUrl}&page=1&q=${searchText}`)
+    .then((res)=> {
+        renderImgCards(res.data.hits)
+    })
 })

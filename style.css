@@ -1,3 +1,6 @@
+body{
+    background-color: blueviolet;
+}
 header{
     position: absolute;
     width: 100%;
@@ -19,6 +22,7 @@ header button{
 .logo{
     color: rgb(0, 76, 255);
     font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .search-container{
     position: absolute;
@@ -36,10 +40,14 @@ header button{
     font-size: xx-large;
     text-align: center;
     font-style: bold;
+    color: white;
 }
 .search-container input{
     margin-top: 5%;
     width: 50%;
+}
+#searchDiv{
+    margin-left: 12%;
 }
 .gallery{
     display: flex;
@@ -67,6 +75,7 @@ header button{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    color: white;
 }
 #btnLoadMore{
     margin-top: 10%;
